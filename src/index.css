@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@theme {
+  /* Oxxy Official Brand Palette - REFINED */
+  --color-primary: #03A297;
+  --color-primary-container: #008B81;
+  --color-secondary: #023350;
+  --color-secondary-container: #012236;
+  --color-background: #F8FAFC; /* Softer light gray */
+  --color-surface: #FFFFFF;
+  --color-surface-container-low: #F1F5F9;
+  --color-surface-container-high: #E2E8F0;
+  --color-on-surface: #023350;
+  --color-on-surface-variant: #64748B; /* Professional slate */
+  --color-outline: #CBD5E1;
+  --color-outline-variant: #E2E8F0;
+  --color-tertiary: #10B981; /* Success Green - refined */
+  --color-tertiary-container: #DCFCE7;
+  --color-error: #EF4444;
+  
+  --radius-lg: 12px;
+  --radius-xl: 20px;
+  --radius-2xl: 32px;
+
+  --font-headline: "Inter", sans-serif;
+  --font-body: "Roboto", sans-serif;
+
+  --animate-scan: scan 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  --animate-neural-pulse: neural-pulse 4s ease-in-out infinite;
+
+  @keyframes scan {
+    0% { top: 0%; opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { top: 100%; opacity: 0; }
+  }
+
+  @keyframes neural-pulse {
+    0%, 100% { opacity: 0.3; transform: scale(1); }
+    50% { opacity: 0.6; transform: scale(1.05); }
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-background font-body text-on-surface-variant scroll-smooth antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-headline text-secondary leading-[1.1] tracking-tight;
+  }
+}
+
+@layer components {
+  .hero-mesh {
+    background-color: #F8FAFC;
+    background-image: 
+      radial-gradient(at 0% 0%, hsla(175, 96%, 32%, 0.15) 0px, transparent 50%),
+      radial-gradient(at 100% 0%, hsla(202, 95%, 16%, 0.1) 0px, transparent 50%),
+      radial-gradient(at 100% 100%, hsla(175, 96%, 32%, 0.1) 0px, transparent 50%),
+      radial-gradient(at 0% 100%, hsla(202, 95%, 16%, 0.1) 0px, transparent 50%);
+  }
+
+  .oxxy-glass {
+    @apply bg-white/70 backdrop-blur-xl border border-white/20 shadow-[0_8px_32px_0_rgba(2,51,80,0.05)];
+  }
+
+  .oxxy-card {
+    @apply bg-white rounded-2xl border border-outline-variant/10 shadow-[0_4px_20px_-4px_rgba(2,51,80,0.08)] hover:shadow-[0_20px_40px_-12px_rgba(2,51,80,0.12)] transition-all duration-500;
+  }
+
+  .scan-line {
+    @apply h-0.5 bg-primary shadow-[0_0_15px_#03A297] absolute w-full left-0 animate-scan z-20;
+  }
+
+  .neural-grid {
+    @apply absolute inset-0 opacity-20 pointer-events-none;
+    background-image: linear-gradient(to right, #03A297 1px, transparent 1px), linear-gradient(to bottom, #03A297 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+
+  .theme-btn {
+    @apply inline-flex items-center justify-center bg-primary text-white font-bold px-8 py-4 rounded-xl hover:bg-primary-container transition-all duration-300 shadow-lg shadow-primary/20 active:scale-95;
+  }
+}

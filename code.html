@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>EditorialCare | Oxxy Healthcare AI Scan</title>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "on-primary-fixed-variant": "#822803",
+                "surface-dim": "#dcd9d9",
+                "secondary-fixed-dim": "#5fd9cd",
+                "background": "#fcf9f8",
+                "secondary": "#006a63",
+                "on-error": "#ffffff",
+                "surface": "#fcf9f8",
+                "on-tertiary-fixed": "#00201a",
+                "on-primary-fixed": "#390c00",
+                "surface-container": "#f0eded",
+                "on-secondary-fixed": "#00201d",
+                "surface-variant": "#e5e2e1",
+                "on-surface-variant": "#57423b",
+                "tertiary": "#28695b",
+                "tertiary-fixed": "#afefde",
+                "primary-fixed-dim": "#ffb59d",
+                "inverse-on-surface": "#f3f0ef",
+                "on-tertiary-container": "#00342b",
+                "on-secondary-fixed-variant": "#00504a",
+                "surface-tint": "#a23f1a",
+                "on-tertiary-fixed-variant": "#055044",
+                "surface-container-highest": "#e5e2e1",
+                "surface-container-high": "#eae7e7",
+                "outline-variant": "#dec0b7",
+                "outline": "#8a726a",
+                "tertiary-container": "#62a090",
+                "on-surface": "#1c1b1b",
+                "inverse-primary": "#ffb59d",
+                "primary-container": "#e8734a",
+                "error": "#ba1a1a",
+                "tertiary-fixed-dim": "#93d3c2",
+                "on-secondary-container": "#006f67",
+                "on-primary-container": "#581700",
+                "surface-bright": "#fcf9f8",
+                "inverse-surface": "#313030",
+                "on-error-container": "#93000a",
+                "secondary-fixed": "#7ef6e9",
+                "on-tertiary": "#ffffff",
+                "on-primary": "#ffffff",
+                "surface-container-low": "#f6f3f2",
+                "on-secondary": "#ffffff",
+                "surface-container-lowest": "#ffffff",
+                "primary-fixed": "#ffdbd0",
+                "primary": "#a23f1a",
+                "secondary-container": "#7bf3e6",
+                "error-container": "#ffdad6",
+                "on-background": "#1c1b1b"
+            },
+            "borderRadius": {
+                "DEFAULT": "1rem",
+                "lg": "2rem",
+                "xl": "3rem",
+                "full": "9999px"
+            },
+            "fontFamily": {
+                "headline": ["Newsreader", "serif"],
+                "body": ["Manrope", "sans-serif"],
+                "label": ["Manrope", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-shadow {
+            box-shadow: 0 20px 40px -10px rgba(28, 27, 27, 0.04);
+        }
+        .scan-line {
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #e8734a, transparent);
+            position: absolute;
+            width: 100%;
+            top: 0;
+            left: 0;
+            animation: scan 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        }
+        @keyframes scan {
+            0% { top: 0%; opacity: 0; }
+            5% { opacity: 1; }
+            95% { opacity: 1; }
+            100% { top: 100%; opacity: 0; }
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface">
+<!-- TopAppBar from JSON -->
+<header class="fixed top-0 z-50 w-full bg-[#fcf9f8]/80 dark:bg-[#1c1b1b]/80 backdrop-blur-md">
+<div class="flex justify-between items-center w-full py-6 px-8 max-w-7xl mx-auto">
+<div class="text-2xl font-serif italic text-[#a23f1a] dark:text-[#e8734a]">EditorialCare</div>
+<div class="hidden md:flex gap-8 items-center">
+<span class="text-sm font-bold Manrope tracking-wide text-[#a23f1a] font-semibold">Face Scan</span>
+<span class="text-sm font-bold Manrope tracking-wide text-[#57423b] dark:text-[#dec0b7] opacity-50">Health Plans</span>
+<span class="text-sm font-bold Manrope tracking-wide text-[#57423b] dark:text-[#dec0b7] opacity-50">FAQ</span>
+</div>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="min-h-screen flex flex-col justify-center items-center text-center px-6 pt-24 pb-12 bg-background relative overflow-hidden">
+<div class="max-w-4xl mx-auto z-10">
+<h1 class="font-headline text-5xl md:text-7xl lg:text-8xl leading-tight text-on-surface mb-6 italic">
+                    Your face knows more about your health than you think.
+                </h1>
+<p class="font-body text-xl md:text-2xl text-on-surface-variant mb-10 max-w-2xl mx-auto">
+                    Take a free 30-second AI health scan. No doctor. No clinic. No paperwork.
+                </p>
+<div class="mb-12 flex flex-col items-center">
+<a class="inline-flex items-center justify-center bg-gradient-to-br from-[#a23f1a] to-[#e8734a] text-white rounded-full px-10 py-5 text-lg font-bold shadow-lg hover:-translate-y-1 hover:shadow-xl transition-all duration-300" href="#scan-module">
+                        Scan My Face — It's Free
+                    </a>
+<p class="mt-4 text-sm text-on-surface-variant font-medium">Used by 2,00,000+ Indians across 1,500 cities.</p>
+</div>
+<!-- Abstract Face Outline with Scan -->
+<div class="relative w-48 h-64 md:w-64 md:h-80 mx-auto mt-8 border-2 border-outline-variant/30 rounded-[4rem] flex items-center justify-center opacity-40">
+<span class="material-symbols-outlined text-8xl text-outline-variant">face</span>
+<div class="scan-line"></div>
+</div>
+<div class="mt-16 flex flex-wrap justify-center gap-8 md:gap-16 text-on-surface-variant/80 text-sm font-bold tracking-widest uppercase">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-xl">verified_user</span>
+                        No signup required
+                    </div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-xl">lock</span>
+                        100% private
+                    </div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-xl">timer</span>
+                        Results in 30 seconds
+                    </div>
+</div>
+</div>
+</section>
+<!-- Section 2: Problem (Dark) -->
+<section class="py-24 px-6 bg-inverse-surface text-white">
+<div class="max-w-7xl mx-auto">
+<div class="mb-20">
+<h2 class="font-headline text-4xl md:text-6xl mb-4 italic">Most Indians don't know they're at risk.</h2>
+<p class="text-surface-variant text-lg max-w-xl">Healthcare costs and hidden symptoms often go unnoticed until it's too late. Knowledge is the first step to prevention.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="p-10 bg-[#3d3c3c] rounded-lg border-l-4 border-primary">
+<div class="font-headline text-5xl mb-4 text-primary-container">₹2,40,000</div>
+<p class="text-surface-variant font-body">Average annual out-of-pocket health expense for a family of four in metro cities.</p>
+</div>
+<div class="p-10 bg-[#3d3c3c] rounded-lg border-l-4 border-primary">
+<div class="font-headline text-5xl mb-4 text-primary-container">68%</div>
+<p class="text-surface-variant font-body">Of lifestyle diseases in urban India remain undiagnosed until critical stages.</p>
+</div>
+<div class="p-10 bg-[#3d3c3c] rounded-lg border-l-4 border-primary">
+<div class="font-headline text-5xl mb-4 text-primary-container">1 in 3</div>
+<p class="text-surface-variant font-body">Adults suffer from chronic stress-induced fatigue that our AI can detect via facial micro-expressions.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: How It Works -->
+<section class="py-24 px-6 bg-surface-container-low">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline text-4xl md:text-6xl text-on-surface italic">Three steps to health clarity.</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 relative">
+<div class="flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full bg-white flex items-center justify-center mb-6 shadow-sm">
+<span class="material-symbols-outlined text-primary text-3xl">photo_camera</span>
+</div>
+<h3 class="font-bold text-xl mb-3">1. Allow camera access</h3>
+<p class="text-on-surface-variant">Simply open your front camera. We don't store your photos or videos.</p>
+</div>
+<div class="flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full bg-white flex items-center justify-center mb-6 shadow-sm">
+<span class="material-symbols-outlined text-primary text-3xl">psychology</span>
+</div>
+<h3 class="font-bold text-xl mb-3">2. Our AI reads your face</h3>
+<p class="text-on-surface-variant">The engine analyzes 400+ points to detect signs of stress and fatigue.</p>
+</div>
+<div class="flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full bg-white flex items-center justify-center mb-6 shadow-sm">
+<span class="material-symbols-outlined text-primary text-3xl">analytics</span>
+</div>
+<h3 class="font-bold text-xl mb-3">3. Get your health snapshot</h3>
+<p class="text-on-surface-variant">Receive a detailed report and a tailored health cover plan instantly.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Scan Experience (Interactive Card UI) -->
+<section class="py-24 px-6 bg-surface" id="scan-module">
+<div class="max-w-4xl mx-auto">
+<div class="bg-surface-container-lowest rounded-xl p-8 md:p-16 editorial-shadow border border-outline-variant/10 text-center">
+<!-- Progress Bar Simulation -->
+<div class="mb-12">
+<div class="flex justify-between text-xs font-bold text-on-surface-variant/60 uppercase mb-2">
+<span>Ready to Scan</span>
+<span>Analysis Progress: 65%</span>
+</div>
+<div class="h-2 w-full bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full w-[65%] bg-primary rounded-full relative overflow-hidden">
+<div class="absolute inset-0 bg-white/30 animate-pulse"></div>
+</div>
+</div>
+</div>
+<!-- Scan Circle -->
+<div class="relative w-64 h-64 mx-auto mb-10 rounded-full border-4 border-dashed border-primary/40 p-4 flex items-center justify-center">
+<div class="w-full h-full rounded-full overflow-hidden bg-surface-container relative">
+<img alt="Scan Preview" class="w-full h-full object-cover grayscale opacity-50" data-alt="Modern high-resolution front-facing portrait of a person looking at a camera lens for health scanning, neutral background, soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAppETp-NqH5VlMYRfwHY0ZWN6-3w8xoJ0u-J0hCjUv-hevk_velDnAmTvP7fxucm3c7yI7raKpiT_bDf8BTAf2v1pbVJktgGa7HRP1Pak46VGnhka6LKjBVt7XoQMKCh50X7JhKMHjJONQaT1pD4S0-MWUMZZHJAbdyyQ7Sk1uGudL9tTrkwpVU1_LfHYVXipmG476urUc395XCvKvT0GZ5uLVcno563ypOSmCh8b4J0s2B3Di7gqF_lI7KL02aHmx-sQVUxwGKZU"/>
+<div class="absolute inset-0 border-4 border-primary rounded-full"></div>
+<div class="scan-line !h-0.5 !bg-primary shadow-[0_0_15px_#e8734a]"></div>
+</div>
+</div>
+<h2 class="font-headline text-3xl text-on-surface mb-8 italic">Analyzing Vital Markers...</h2>
+<!-- Results Table (Simulated) -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+<div class="p-4 bg-surface-container-low rounded-lg text-center">
+<span class="block text-xs font-bold text-on-surface-variant mb-1 uppercase tracking-tighter">Stress</span>
+<span class="text-2xl font-headline italic text-primary">Moderate</span>
+</div>
+<div class="p-4 bg-surface-container-low rounded-lg text-center">
+<span class="block text-xs font-bold text-on-surface-variant mb-1 uppercase tracking-tighter">Skin</span>
+<span class="text-2xl font-headline italic text-secondary">Healthy</span>
+</div>
+<div class="p-4 bg-surface-container-low rounded-lg text-center">
+<span class="block text-xs font-bold text-on-surface-variant mb-1 uppercase tracking-tighter">Fatigue</span>
+<span class="text-2xl font-headline italic text-primary">Elevated</span>
+</div>
+<div class="p-4 bg-surface-container-low rounded-lg text-center">
+<span class="block text-xs font-bold text-on-surface-variant mb-1 uppercase tracking-tighter">Wellness</span>
+<span class="text-2xl font-headline italic text-secondary">Optimal</span>
+</div>
+</div>
+<!-- Personalized Bridge -->
+<div class="p-6 bg-tertiary-container/10 rounded-lg mb-10 border border-tertiary-container/30">
+<p class="text-on-tertiary-container text-lg font-medium">
+                            Based on your scan, your stress levels suggest a higher risk of cardiovascular strain. 
+                            We recommend the <span class="font-bold">Oxxy Vitality Shield</span>.
+                        </p>
+</div>
+<a class="inline-block bg-primary text-white font-bold px-12 py-5 rounded-full hover:bg-on-primary-container transition-colors shadow-lg" href="#">
+                        Get My Oxxy Plan — First Month 50% Off
+                    </a>
+</div>
+</div>
+</section>
+<!-- Section 5: Social Proof -->
+<section class="py-24 px-6 bg-surface-container-low overflow-hidden">
+<div class="max-w-7xl mx-auto">
+<div class="mb-16">
+<h2 class="font-headline text-4xl italic text-on-surface">Voices of India.</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-white p-10 rounded-xl editorial-shadow">
+<div class="flex items-center gap-1 mb-6 text-[#FFB800]">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-on-surface-variant italic mb-8 leading-relaxed">"I was skeptical about a 30-second scan. It picked up my chronic fatigue accurately. The health plan they suggested saved me 40% on my quarterly checkups."</p>
+<div class="font-bold">Rajeev S. <span class="font-normal text-on-surface-variant/60 ml-2">Mumbai</span></div>
+</div>
+<div class="bg-white p-10 rounded-xl editorial-shadow mt-0 md:mt-8">
+<div class="flex items-center gap-1 mb-6 text-[#FFB800]">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-on-surface-variant italic mb-8 leading-relaxed">"Oxxy Healthcare is a game changer. The AI scan is so easy for my parents to use. We finally have a health plan that actually cares about prevention."</p>
+<div class="font-bold">Priya M. <span class="font-normal text-on-surface-variant/60 ml-2">Bangalore</span></div>
+</div>
+<div class="bg-white p-10 rounded-xl editorial-shadow mt-0 md:mt-16">
+<div class="flex items-center gap-1 mb-6 text-[#FFB800]">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-on-surface-variant italic mb-8 leading-relaxed">"Privacy was my biggest concern. Knowing they don't store photos and focus only on markers made me trust the platform. Fast, accurate, and essential."</p>
+<div class="font-bold">Ankit T. <span class="font-normal text-on-surface-variant/60 ml-2">Delhi</span></div>
+</div>
+</div>
+<div class="mt-20 flex flex-wrap justify-center items-center gap-12 opacity-40 grayscale">
+<img alt="Partner 1" class="h-8" data-alt="Minimalist corporate health insurance logo in dark grey" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxXEIWc4YddQCEL5kgUc06X_lMVwk78aTOqQvXwo0aWHdqiDtm1nTi4lx6CfQCcTUCaUDW84iPNe4lLpnY3NQPpFco4yRj1VIs8dB_xl-HfwAXG5G3ZQpcE8LLF5SVsvsT4MvpCqN_Tcp_N8wnBO3OzUlGijzztlCX_-oMbs6QUvs5VT6lMSQrfWSr5GRiMNt3fYpTZTvYY3ixkpR2wmEnGiaw1zBEksVzZBzQazkrJ7NP6L4F5rTkkQptGIm0BE_N8g5FoxnzWs4"/>
+<img alt="Partner 2" class="h-8" data-alt="Sophisticated medical technology company logo in dark grey" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUyUxkIS1-_-MLCQwwMfTfI7VKyx5dM62jLUGMvWPpUfjaN4_br-rM_OuixI_iffotBUisvTM9E5-lGHtvLgOwCUk38meNWag7UpP9kgKI3pdeAbph8qQeyk_YikUXoMX_sRtltiW_aicWiLsGtpcC5g_O97PyX8lYeilZ9dVvqMkEaccnqcIoobSFuEyGWXAo7RGAhpDMfqfnecH-85NL4PGPW2wGFdLq5N59PL5j0j4EgrO-jwBUwBrnFuWWkUct9gmBQ7_3lM8"/>
+<img alt="Partner 3" class="h-8" data-alt="National healthcare accreditation seal in dark grey" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhi1OS8rRoO3u0eUuw6F89bnpoYJBRfV4M5FcrqnvbuJlbVMSnp-RDsd41FFibmzRmkpQf8axZjZuRQ-a7nn7amH7JW8917faJhnOo3S6RdLLbNAwx6pm8kqEdlbkLe1iKPJnDsqP5fgNUUJk4bWMzdhC9LvJdCK5gYhEDp0Cx4FVjG-DthhmHobLSs4zGkOJdSjK3FgbB_C9l1hAIa8Kwg_JFPLUEZ9pSasTczamYi5Yhgn9Tiw2Qh6K_riBY80LVI5Wbbg0jVV0"/>
+<img alt="Partner 4" class="h-8" data-alt="Global AI medical research institute logo in dark grey" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAxzC_qhDaK94zrtabRyk2bOkl-4dc7KN50MEKeeMsFL6hAcwwyjf_NrCuPTLfORGco6IxdSyXggQxBInvFkYjlBh8CB6pW-W-wOC-9x-MO1MpaMPM9DgSM18q7hRKamGHDTO95xt93Xc_5UhThbfCW8GDiLoLgjp8MIxUFrDVi4U4tCN-yS8XyFzQ9iLzHB33TtxKWw9T_UE16AkPmnJ4hKkHQLmSRyu-_rSav0U7hr5R6rz1OTz875KUPf2iCsZeGTpNxFEEgLc"/>
+</div>
+</div>
+</section>
+<!-- Section 6: FAQ -->
+<section class="py-24 px-6 bg-surface">
+<div class="max-w-3xl mx-auto">
+<h2 class="font-headline text-4xl mb-12 text-center italic">Common Questions.</h2>
+<div class="space-y-4">
+<div class="border-b border-outline-variant pb-4">
+<button class="flex justify-between items-center w-full text-left font-bold text-lg py-4">
+<span>How accurate is the AI facial scan?</span>
+<span class="material-symbols-outlined">expand_more</span>
+</button>
+</div>
+<div class="border-b border-outline-variant pb-4">
+<button class="flex justify-between items-center w-full text-left font-bold text-lg py-4">
+<span>Is my data private?</span>
+<span class="material-symbols-outlined">expand_more</span>
+</button>
+</div>
+<div class="border-b border-outline-variant pb-4">
+<button class="flex justify-between items-center w-full text-left font-bold text-lg py-4">
+<span>Do I need to sign up before scanning?</span>
+<span class="material-symbols-outlined">expand_more</span>
+</button>
+</div>
+<div class="border-b border-outline-variant pb-4">
+<button class="flex justify-between items-center w-full text-left font-bold text-lg py-4">
+<span>Can this replace a doctor's visit?</span>
+<span class="material-symbols-outlined">expand_more</span>
+</button>
+</div>
+<div class="border-b border-outline-variant pb-4">
+<button class="flex justify-between items-center w-full text-left font-bold text-lg py-4">
+<span>How do I claim my 50% discount?</span>
+<span class="material-symbols-outlined">expand_more</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 7: Final CTA (Dark) -->
+<section class="py-24 px-6 bg-inverse-surface text-center overflow-hidden relative">
+<div class="max-w-4xl mx-auto z-10 relative">
+<h2 class="font-headline text-5xl md:text-7xl text-white mb-8 italic">The best time to protect your health was yesterday.</h2>
+<p class="text-surface-variant text-xl mb-12">The second best time is right now. Scan in 30 seconds.</p>
+<div class="flex flex-col items-center gap-6">
+<a class="inline-flex items-center justify-center bg-gradient-to-br from-[#a23f1a] to-[#e8734a] text-white rounded-full px-12 py-5 text-xl font-bold shadow-lg hover:scale-105 transition-transform duration-300" href="#scan-module">
+                        Scan My Face — It's Free
+                    </a>
+<a class="text-surface-variant hover:text-white transition-colors flex items-center gap-2" href="#">
+                        Skip the scan — just show me Oxxy plans <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Decorative Gradient Glow -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/10 blur-[120px] rounded-full pointer-events-none"></div>
+</section>
+</main>
+<!-- BottomNavBar from JSON -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-center pointer-events-none pb-8 px-6 z-50">
+<a class="pointer-events-auto flex items-center justify-center bg-gradient-to-br from-[#a23f1a] to-[#e8734a] text-white rounded-full py-4 px-12 shadow-2xl hover:-translate-y-1 hover:shadow-xl active:scale-95 transition-all duration-300 group" href="#scan-module">
+<span class="material-symbols-outlined mr-3">qr_code_scanner</span>
+<span class="text-sm font-bold Manrope tracking-wide">Begin Scan</span>
+</a>
+</nav>
+</body></html>
