@@ -7,7 +7,6 @@ import { SocialProof } from './components/SocialProof';
 import { FAQ } from './components/FAQ';
 import { FinalCTA } from './components/FinalCTA';
 import { Footer } from './components/Footer';
-import { PricingStrategy } from './components/PricingStrategy';
 import { HealthCategories } from './components/HealthCategories';
 import { BrandTrust } from './components/BrandTrust';
 import { ReportPreview } from './components/ReportPreview';
@@ -22,14 +21,13 @@ function App() {
       <main>
         <Hero />
         <SymptomSection />
+        <HealthFacts />
         <HealthCategories />
         <ReportPreview />
         <ComparisonSection />
         <VerticalSteps />
         <PersonaSection />
-        <HealthFacts />
         <BrandTrust />
-        <PricingStrategy />
         <ScanModule />
         <SocialProof />
         <FAQ />

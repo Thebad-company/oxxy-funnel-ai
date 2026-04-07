@@ -48,14 +48,14 @@ export const ReportPreview: React.FC = () => {
                             <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-2xl" />
                             
                             <div className="flex justify-between items-center mb-12">
-                                <img src="/oxxy_logo.png" className="h-6 object-contain opacity-40" alt="Logo" />
+                                <img src={APP_DATA.navigation.logo} className="h-6 md:h-8 object-contain" alt="Oxxy Logo" />
                                 <div className="text-[10px] font-black text-on-surface-variant/40 uppercase tracking-widest">Confidential Report</div>
                             </div>
 
                             <div className="flex items-center gap-4 mb-12 pb-8 border-b border-outline-variant/30">
-                                <div className="w-16 h-16 rounded-full bg-secondary/10 flex items-center justify-center font-black text-secondary text-2xl">V</div>
+                                <div className="w-16 h-16 rounded-full bg-secondary/10 flex items-center justify-center font-black text-secondary text-2xl">A</div>
                                 <div>
-                                    <h4 className="font-headline font-black text-secondary uppercase tracking-wider">Vivek Suyal</h4>
+                                    <h4 className="font-headline font-black text-secondary uppercase tracking-wider">Aarav Sharma</h4>
                                     <span className="text-[10px] font-bold text-on-surface-variant uppercase tracking-widest">ID: #OXXY-9281-AI</span>
                                 </div>
                             </div>

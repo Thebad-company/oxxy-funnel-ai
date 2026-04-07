@@ -56,20 +56,6 @@ export const SocialProof: React.FC = () => {
                     ))}
                 </div>
 
-                {/* Partners Slider Simulation */}
-                <div className="mt-40">
-                    <p className="text-center text-[10px] font-black text-on-surface-variant/40 uppercase tracking-[0.3em] mb-12">Authorized Digital Health Partners</p>
-                    <div className="flex flex-wrap justify-center items-center gap-8 md:gap-20 opacity-30 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-700">
-                        {socialProof.partners.map((partnerUrl, i) => (
-                            <img 
-                                key={i} 
-                                alt={`Partner ${i + 1}`} 
-                                className="h-6 md:h-8 max-w-[140px] object-contain transition-transform hover:scale-110" 
-                                src={partnerUrl} 
-                            />
-                        ))}
-                    </div>
-                </div>
             </div>
         </section>
     );

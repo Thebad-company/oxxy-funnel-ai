@@ -37,11 +37,8 @@ export const Footer: React.FC = () => {
                 </div>
 
                 {/* Bottom Bar */}
-                <div className="pt-8 border-t border-outline-variant/10 flex flex-col md:flex-row justify-between items-center gap-4 text-on-surface-variant/60 text-[10px] font-bold uppercase tracking-widest">
+                <div className="pt-8 border-t border-outline-variant/10 flex flex-col items-center gap-4 text-on-surface-variant/60 text-[10px] font-bold uppercase tracking-widest text-center">
                     <p>© {new Date().getFullYear()} Oxxy Healthcare. All rights reserved.</p>
-                    <div className="flex gap-8">
-                        <a href="#" className="hover:text-primary transition-colors">Terms of Service</a>
-                    </div>
                 </div>
             </div>
         </footer>

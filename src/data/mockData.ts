@@ -142,7 +142,7 @@ export const APP_DATA = {
     description: "Traditional diagnostics are slow and stressful. Oxxy AI brings hospital-grade analysis to your fingertips in seconds.",
     items: [
         { label: "Checkup Time", traditional: "3 - 5 Hours", oxxy: "30 Seconds", icon: "timer" },
-        { label: "Diagnostic Method", traditional: "Clinical / Invasive", oxxy: "AI / Contactless", icon: "biometrics" },
+        { label: "Diagnostic Method", traditional: "Clinical / Invasive", oxxy: "AI / Contactless", icon: "fingerprint" },
         { label: "Cost (Avg)", traditional: "₹5,000+", oxxy: "Free Assessment", icon: "payments" },
         { label: "Report Delivery", traditional: "24 - 48 Hours", oxxy: "Instant Snapshot", icon: "send_and_archive" }
     ]
