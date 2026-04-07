@@ -21,8 +21,11 @@ export const ProblemStats: React.FC = () => {
                 <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary/10 to-primary/40 group-hover:from-primary transition-all duration-700" />
                 
                 <div className="relative z-10">
-                    <div className="font-headline text-5xl font-black mb-4 text-primary tracking-tighter transition-transform duration-500 group-hover:scale-110 origin-left">
-                        {stat.value}
+                    <div className="flex items-center gap-3 mb-4">
+                        <span className="material-symbols-outlined text-primary text-3xl">{stat.icon}</span>
+                        <div className="font-headline text-5xl font-black text-primary tracking-tighter transition-transform duration-500 group-hover:scale-110 origin-left">
+                            {stat.value}
+                        </div>
                     </div>
                     <p className="text-on-surface-variant font-body font-medium leading-relaxed italic group-hover:text-on-surface transition-colors">
                         {stat.description}

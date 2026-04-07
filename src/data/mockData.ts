@@ -9,23 +9,23 @@ export const APP_DATA = {
     ]
   },
   hero: {
-    title: "AI Health Scan by Oxxy — Your Face Tells a Story.",
-    description: "Take a free 30-second AI health scan. Our transdermal optical imaging technology analyzes 10,000+ data points to provide a clinical-grade health snapshot instantly.",
-    cta: "Start My Oxxy AI Scan — Free",
-    stats: "Used by 2,00,000+ Indians across 1,500 cities.",
+    title: "The Future of Health is Staring Back at You.",
+    description: "Stop wondering about your health. Just look into your camera and get a full clinical-grade vitals checkup in 30 seconds.",
+    cta: "Scan My Face Now",
+    stats: "Trusted by 2 million+ users nationwide.",
     features: [
-      { icon: "verified_user", text: "ISO Certified Tech" },
-      { icon: "lock", text: "HIPAA Compliant" },
-      { icon: "timer", text: "Results in 30 seconds" }
+      { icon: "bolt", text: "Instant Results" },
+      { icon: "verified", text: "95% Accuracy" },
+      { icon: "security", text: "Private & Secure" }
     ]
   },
   problem: {
-    title: "Most Indians don't know they're at risk.",
-    description: "Lifestyle diseases account for 68% of all urban deaths. Early detection is not just a choice—it's a necessity. Oxxy provides the early warning system your body deserves.",
+    title: "The Ultimate Health Dashboard in Your Pocket.",
+    description: "Get a diagnostic-grade health analysis using just your smartphone camera. No expensive equipment, no blood samples, just accurate insights in real-time.",
     stats: [
-      { value: "₹2,40,000", description: "Average annual out-of-pocket health expense for a family of four in metro cities." },
-      { value: "68%", description: "Of lifestyle diseases in urban India remain undiagnosed until critical stages." },
-      { value: "1 in 3", description: "Adults suffer from chronic stress-induced fatigue that Oxxy AI can detect via facial micro-expressions." }
+      { icon: "monitor_heart", value: "8+ Vitals", description: "From Heart Rate and Blood Pressure to Oxygen levels and Stress indices." },
+      { icon: "checklist", value: "30 Seconds", description: "Get a full clinical report faster than it takes to boil a cup of tea." },
+      { icon: "shield_moon", value: "Private", description: "Zero images stored. Your biometric data is encrypted and discarded instantly." }
     ]
   },
   howItWorks: {
@@ -61,13 +61,32 @@ export const APP_DATA = {
     }
   },
   depth: {
-      title: "The Science of Oxxy AI",
-      description: "Our proprietary technology utilizes Transdermal Optical Imaging (TOI) to extract blood flow information from the face.",
+      title: "The Ultimate Health Vitals Report.",
+      description: "Our AI doesn't just scan; it understands your body's vital signals to provide a surgical-grade overview of your health status.",
       features: [
-          { title: "Remote PPG", description: "Detection of blood volume pulse through the camera lens without physical contact." },
-          { title: "Neural Biometrics", description: "Processing 10,000+ data points per second to identify micro-stress signals." },
-          { title: "Diagnostic Accuracy", description: "Our algorithms are trained on 1M+ clinical data points to ensure 92% correlation with clinical vitals." }
+          { title: "Cardiac Insight", description: "Real-time analysis of blood pulse patterns to estimate heart rate and cardiac workload." },
+          { icon: "air", title: "Oxygen Levels", description: "Detection of blood flow variations to estimate SpO2 levels without physical contact." },
+          { title: "Stress Recovery", description: "Analysis of micro-facial movements to determine your body's stress and recovery index." },
+          { title: "Physical Metrics", description: "Estimation of metabolism, BMI, and overall body composition markers." }
       ]
+  },
+  healthCategories: {
+    title: "Every Vital Stat, Deciphered.",
+    categories: [
+        { icon: "monitor_heart", name: "Cardiovascular", description: "Heart Rate & Blood Pressure" },
+        { icon: "airwave", name: "Respiratory", description: "Oxygen & Breathing Rate" },
+        { icon: "psychology", name: "Neurological", description: "Stress & Mental Fatigue" },
+        { icon: "vital_signs", name: "Biometric", description: "BMI & Recovery Insight" }
+    ]
+  },
+  brandTrust: {
+    title: "India’s Largest Health Network.",
+    description: "Oxxy is more than just a scan; it’s the gateway to affordable, clinical healthcare for over 2 million Indians.",
+    stats: [
+        { label: "Active Users", value: "2,000,000+" },
+        { label: "Partner Hospitals", value: "20,000+" },
+        { label: "Indian Cities", value: "1,500+" }
+    ]
   },
   pricing: {
       title: "Regional Assessment Pricing",
@@ -88,6 +107,52 @@ export const APP_DATA = {
       "https://lh3.googleusercontent.com/aida-public/AB6AXuCUyUxkIS1-_-MLCQwwMfTfI7VKyx5dM62jLUGMvWPpUfjaN4_br-rM_OuixI_iffotBUisvTM9E5-lGHtvLgOwCUk38meNWag7UpP9kgKI3pdeAbph8qQeyk_YikUXoMX_sRtltiW_aicWiLsGtpcC5g_O97PyX8lYeilZ9dVvqMkEaccnqcIoobSFuEyGWXAo7RGAhpDMfqfnecH-85NL4PGPW2wGFdLq5N59PL5j0j4EgrO-jwBUwBrnFuWWkUct9gmBQ7_3lM8",
       "https://lh3.googleusercontent.com/aida-public/AB6AXuBhi1OS8rRoO3u0eUuw6F89bnpoYJBRfV4M5FcrnvbuJlbVMSnp-RDsd41FFibmzRmkpQf8axZjZuRQ-a7nn7amH7JW8917faJhnOo3S6RdLLbNAwx6pm8kqEdlbkLe1iKPJnDsqP5fgNUUJk4bWMzdhC9LvJdCK5gYhEDp0Cx4FVjG-DthhmHobLSs4zGkOJdSjK3FgbB_C9l1hAIa8Kwg_JFPLUEZ9pSasTczamYi5Yhgn9Tiw2Qh6K_riBY80LVI5Wbbg0jVV0",
       "https://lh3.googleusercontent.com/aida-public/AB6AXuCAxzC_qhDaK94zrtabRyk2bOkl-4dc7KN50MEKeeMsFL6hAcwwyjf_NrCuPTLfORGco6IxdSyXggQxBInvFkYjlBh8CB6pW-W-wOC-9x-MO1MpaMPM9DgSM18q7hRKamGHDTO95xt93Xc_5UhThbfCW8GDiLoLgjp8MIxUFrDVi4U4tCN-yS8XyFzQ9iLzHB33TtxKWw9T_UE16AkPmnJ4hKkHQLmSRyu-_rSav0U7hr5R6rz1OTz875KUPf2iCsZeGTpNxFEEgLc"
+    ]
+  },
+  reportPreview: {
+    title: "Curious? Here’s a Glimpse of Your Report.",
+    description: "Receive a comprehensive digital health audit covering 8+ vital domains, with personalized lifestyle recommendations based on your scan.",
+    vitals: [
+        { label: "Cardiac Load", value: "Moderate", status: "Monitor", color: "primary" },
+        { label: "Stress Index", value: "5.4/10", status: "Balanced", color: "tertiary" },
+        { label: "Oxygen Sat.", value: "98%", status: "Optimal", color: "tertiary" },
+        { label: "Recovery Rate", value: "72%", status: "Good", color: "tertiary" }
+    ]
+  },
+  curiosityFacts: {
+    title: "The Science of the Unseen.",
+    facts: [
+        { icon: "psychology", title: "Mental Fatigue", text: "Your blink rate and micro-tensions reveal neurological stress before you even feel tired." },
+        { icon: "fluid", title: "Blood Perfusion", text: "Skin color variations, invisible to the eye, reveal your precise heart rate and cardiac output." },
+        { icon: "visibility", title: "Early Detection", text: "Certain facial markers can signal metabolic shifts up to 6 months before clinical symptoms appear." }
+    ]
+  },
+  symptoms: {
+    title: "Your face speaks about your body.",
+    description: "Our AI captures the subtle signs your body sends through your face—signs that can be detected months before they become symptoms.",
+    items: [
+        { icon: "heart_broken", label: "Cardiac Stress", symptom: "Facial perfusion lag indicates an overworked heart long before traditional indicators." },
+        { icon: "air", label: "Oxygen Strain", symptom: "Sub-surface skin color shifts reveal respiratory struggle common in high-pollution areas." },
+        { icon: "bolt", label: "Burnout Warning", symptom: "Micro-facial muscle tremors are the first markers of neurological and physical exhaustion." },
+        { icon: "monitoring", label: "Metabolic Shift", symptom: "Hidden variations in skin reflectance signal rapid shifts in metabolic rate and BMI." }
+    ]
+  },
+  comparison: {
+    title: "Clinical Precision. Zero Friction.",
+    description: "Traditional diagnostics are slow and stressful. Oxxy AI brings hospital-grade analysis to your fingertips in seconds.",
+    items: [
+        { label: "Checkup Time", traditional: "3 - 5 Hours", oxxy: "30 Seconds", icon: "timer" },
+        { label: "Diagnostic Method", traditional: "Clinical / Invasive", oxxy: "AI / Contactless", icon: "biometrics" },
+        { label: "Cost (Avg)", traditional: "₹5,000+", oxxy: "Free Assessment", icon: "payments" },
+        { label: "Report Delivery", traditional: "24 - 48 Hours", oxxy: "Instant Snapshot", icon: "send_and_archive" }
+    ]
+  },
+  personas: {
+    title: "Engineered for Every Lifestyle.",
+    items: [
+        { icon: "work", title: "The Busy Executive", description: "Detect silent markers of stress and cardiac strain before burnout hits.", image: "/persona_executive_in.png" },
+        { icon: "fitness_center", title: "The Athlete", description: "Optimize your peak performance by tracking recovery and heart workload.", image: "/persona_athlete_in.png" },
+        { icon: "family_restroom", title: "The Family Guard", description: "A non-invasive, quick way to keep a regular eye on your loved ones' vitals, including seniors.", image: "/persona_family_in.png" }
     ]
   },
   faq: {

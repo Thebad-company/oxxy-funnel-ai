@@ -1,14 +1,19 @@
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
-import { ProblemStats } from './components/ProblemStats';
+import { SymptomSection } from './components/SymptomSection';
 import { VerticalSteps } from './components/VerticalSteps';
-import { ScienceDepth } from './components/ScienceDepth';
 import { ScanModule } from './components/ScanModule';
 import { SocialProof } from './components/SocialProof';
 import { FAQ } from './components/FAQ';
 import { FinalCTA } from './components/FinalCTA';
 import { Footer } from './components/Footer';
 import { PricingStrategy } from './components/PricingStrategy';
+import { HealthCategories } from './components/HealthCategories';
+import { BrandTrust } from './components/BrandTrust';
+import { ReportPreview } from './components/ReportPreview';
+import { HealthFacts } from './components/HealthFacts';
+import { ComparisonSection } from './components/ComparisonSection';
+import { PersonaSection } from './components/PersonaSection';
 
 function App() {
   return (
@@ -16,9 +21,14 @@ function App() {
       <Header />
       <main>
         <Hero />
-        <ProblemStats />
+        <SymptomSection />
+        <HealthCategories />
+        <ReportPreview />
+        <ComparisonSection />
         <VerticalSteps />
-        <ScienceDepth />
+        <PersonaSection />
+        <HealthFacts />
+        <BrandTrust />
         <PricingStrategy />
         <ScanModule />
         <SocialProof />

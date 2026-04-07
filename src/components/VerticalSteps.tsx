@@ -51,15 +51,15 @@ export const VerticalSteps: React.FC = () => {
         </div>
 
         <div className="relative">
-          {/* Vertical Line */}
-          <div className="absolute left-1/2 top-0 bottom-0 w-px bg-outline-variant/30 -translate-x-1/2 hidden md:block" />
+          {/* Vertical Line Effect */}
+          <div className="absolute left-1/2 top-12 bottom-12 w-[2px] border-l-2 border-dashed border-primary/40 -translate-x-1/2 hidden md:block z-0" />
 
           {STEPS.map((step, i) => (
             <div key={i} className={`flex flex-col md:flex-row items-center gap-12 md:gap-24 mb-24 md:mb-40 last:mb-0 relative ${i % 2 !== 0 ? 'md:flex-row-reverse' : ''}`}>
               
               {/* Step Circle (Mobile/Desktop) */}
               <div className="absolute left-1/2 -translate-x-1/2 top-0 md:top-1/2 md:-translate-y-1/2 z-20 hidden md:flex items-center justify-center">
-                <div className="w-12 h-12 rounded-full bg-secondary text-white font-headline font-black flex items-center justify-center border-4 border-surface shadow-xl">
+                <div className="w-14 h-14 rounded-full bg-secondary text-white font-headline font-black flex items-center justify-center border-[8px] border-surface shadow-[0_0_0_2px_rgba(3,162,151,0.2)] group-hover:shadow-[0_0_0_6px_rgba(3,162,151,0.2)] transition-all duration-500">
                     {step.number}
                 </div>
               </div>

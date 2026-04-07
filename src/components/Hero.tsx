@@ -20,11 +20,21 @@ export const Hero: React.FC = () => {
                     {hero.description}
                 </p>
 
+                <div className="mb-16">
+                    <button className="theme-btn group hover:scale-105 transition-all duration-300">
+                        {hero.cta}
+                        <span className="material-symbols-outlined ml-2 group-hover:translate-x-1 transition-transform">qr_code_scanner</span>
+                    </button>
+                </div>
+
                 {/* Trust Features */}
                 <div className="flex flex-wrap justify-center items-center gap-4 text-xs font-bold text-on-surface-variant/80 uppercase tracking-[0.2em] mb-16">
-                    <span className="flex items-center gap-1.5 px-4 py-2 bg-on-surface-variant/5 rounded-full"><span className="material-symbols-outlined text-sm text-primary">verified</span> No Signup</span>
-                    <span className="flex items-center gap-1.5 px-4 py-2 bg-on-surface-variant/5 rounded-full"><span className="material-symbols-outlined text-sm text-primary">lock_open</span> Secured</span>
-                    <span className="flex items-center gap-1.5 px-4 py-2 bg-on-surface-variant/5 rounded-full"><span className="material-symbols-outlined text-sm text-primary">speed</span> 30 Sec Result</span>
+                    {hero.features.map((feature, i) => (
+                        <span key={i} className="flex items-center gap-1.5 px-4 py-2 bg-on-surface-variant/5 rounded-full">
+                            <span className="material-symbols-outlined text-sm text-primary">{feature.icon}</span> 
+                            {feature.text}
+                        </span>
+                    ))}
                 </div>
 
                 {/* Tech Preview Box */}
