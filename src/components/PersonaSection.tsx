@@ -41,8 +41,8 @@ export const PersonaSection: React.FC = () => {
                                         "{item.description}"
                                     </p>
                                     <div className="mt-10">
-                                        <a href="#scan-module" className="inline-flex items-center gap-2 text-primary font-black uppercase text-xs tracking-widest hover:gap-4 transition-all">
-                                            See Scenarios
+                                        <a href={item.href || "#scan-module"} className="inline-flex items-center gap-2 text-primary font-black uppercase text-xs tracking-widest hover:gap-4 transition-all">
+                                            {item.cta || "See Scenarios"}
                                             <span className="material-symbols-outlined text-base">arrow_forward</span>
                                         </a>
                                     </div>

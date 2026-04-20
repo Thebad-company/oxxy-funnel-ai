@@ -34,6 +34,15 @@ function App() {
         <FinalCTA />
       </main>
       <Footer />
+
+      {/* Persistent Sticky Disclaimer Footer */}
+      <div className="fixed bottom-0 left-0 w-full bg-secondary text-white py-3 px-6 text-center text-[10px] md:text-xs font-black uppercase tracking-[0.2em] z-[60] border-t border-primary/20 shadow-[0_-4px_20px_rgba(3,162,151,0.2)]">
+          <div className="max-w-7xl mx-auto flex items-center justify-center gap-4">
+              <span className="material-symbols-outlined text-primary text-sm animate-pulse">emergency</span>
+              Disclaimer: AI results are wellness indicators only. Consult a doctor for clinical accuracy.
+              <span className="material-symbols-outlined text-primary text-sm animate-pulse">emergency</span>
+          </div>
+      </div>
     </div>
   );
 }

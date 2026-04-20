@@ -10,7 +10,7 @@ export const HowItWorks: React.FC = () => {
         <div className="mb-16">
           <h2 className="font-headline text-4xl md:text-6xl text-on-surface italic">{howItWorks.title}</h2>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 relative">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 relative mb-12">
           {howItWorks.steps.map((step, i) => (
             <div key={i} className="flex flex-col items-center text-center">
               <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center mb-6 shadow-sm">
@@ -21,6 +21,9 @@ export const HowItWorks: React.FC = () => {
             </div>
           ))}
         </div>
+        <p className="text-[10px] text-on-surface-variant/40 font-medium uppercase tracking-widest max-w-xl mx-auto italic">
+            * Oxxy AI is a wellness monitoring tool. For clinical accuracy and diagnosis, always consult a licensed medical professional.
+        </p>
       </div>
     </section>
   );

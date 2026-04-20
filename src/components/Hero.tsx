@@ -66,7 +66,7 @@ export const Hero: React.FC = () => {
                 </div>
 
                 {/* Trust Stats */}
-                <div className="mt-8 flex flex-wrap justify-center items-center gap-4 bg-white/40 backdrop-blur-md px-6 py-2 rounded-full border border-white/20 shadow-sm max-w-fit mx-auto">
+                <div className="mt-8 flex flex-wrap justify-center items-center gap-4 bg-white/40 backdrop-blur-md px-6 py-2 rounded-full border border-white/20 shadow-sm max-w-fit mx-auto mb-6">
                     <div className="flex -space-x-2">
                         {[1,2,3,4].map(i => (
                             <div key={i} className="w-6 h-6 rounded-full border-2 border-white bg-on-surface-variant/10 overflow-hidden">
@@ -78,6 +78,11 @@ export const Hero: React.FC = () => {
                         {hero.stats}
                     </p>
                 </div>
+
+                {/* Hero Disclaimer */}
+                <p className="text-[10px] text-on-surface-variant/60 font-medium italic max-w-lg mx-auto">
+                    * Oxxy AI provides biometric estimates for awareness only. It is not an alternative to professional clinical diagnosis or doctor-led consultation. Accuracy depends on lighting and device conditions.
+                </p>
             </div>
         </section>
     );

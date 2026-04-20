@@ -12,9 +12,9 @@ export const ScanModule: React.FC = () => {
                 <div className="bg-white rounded-3xl p-8 md:p-16 oxxy-shadow border border-outline-variant/10 text-center relative overflow-hidden">
                     
                     {/* Official Tech Badge */}
-                    <div className="mb-10 inline-flex items-center gap-2 px-4 py-2 bg-primary/5 rounded-full border border-primary/10">
-                        <span className="material-symbols-outlined text-primary text-base">verified</span>
-                        <span className="text-[10px] font-bold text-primary uppercase tracking-[0.2em]">{scanModule.disclaimer.short}</span>
+                    <div className="mb-10 inline-flex items-center gap-2 px-4 py-2 bg-secondary rounded-full border border-primary/20 shadow-lg">
+                        <span className="material-symbols-outlined text-primary text-base">emergency_home</span>
+                        <span className="text-[10px] font-bold text-white uppercase tracking-[0.2em]">{scanModule.disclaimer.short}</span>
                     </div>
 
                     <h2 className="font-headline text-3xl md:text-5xl text-secondary mb-12 font-black uppercase tracking-tight">
@@ -114,11 +114,18 @@ export const ScanModule: React.FC = () => {
                             </div>
                             
                             {/* Full Legal Disclaimer - Professional Positioning */}
-                            <div className="flex items-start gap-4 p-6 bg-surface-container-high/30 rounded-2xl border border-outline-variant/10 text-left">
-                                <span className="material-symbols-outlined text-outline text-2xl shrink-0">policy</span>
-                                <p className="text-[11px] text-on-surface-variant font-medium leading-relaxed">
-                                    {scanModule.disclaimer.full}
-                                </p>
+                            <div className="flex flex-col md:flex-row items-center gap-6 p-8 bg-[#023350] rounded-3xl border border-primary/20 text-left shadow-2xl relative overflow-hidden group">
+                                <div className="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full translate-x-1/2 -translate-y-1/2 blur-2xl group-hover:bg-primary/10 transition-colors" />
+                                <span className="material-symbols-outlined text-primary text-4xl shrink-0 bg-white/10 p-3 rounded-2xl">error</span>
+                                <div>
+                                    <h4 className="text-white font-black text-xs uppercase tracking-[0.2em] mb-2 flex items-center gap-2">
+                                        Medical Disclaimer
+                                        <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
+                                    </h4>
+                                    <p className="text-white/80 text-[11px] md:text-xs font-medium leading-relaxed italic">
+                                        {scanModule.disclaimer.full}
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
