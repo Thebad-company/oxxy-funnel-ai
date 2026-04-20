@@ -97,9 +97,9 @@ export const APP_DATA = {
   socialProof: {
     title: "Voices of Oxxy Users.",
     testimonials: [
-      { name: "Rajeev S.", location: "Mumbai", rating: 5, quote: "\"The BP estimation was within 5% of my home monitor. Oxxy's tech is truly revolutionary for early detection.\"" },
-      { name: "Priya M.", location: "Bangalore", rating: 5, quote: "\"It detected my high stress levels before I even realized I was burnt out. The plan they suggested is a lifesaver.\"" },
-      { name: "Ankit T.", location: "Delhi", rating: 5, quote: "\"I never thought a face scan could estimate BMI and Cardiac Load. It's the depth of data that made me stay with Oxxy.\"" }
+      { name: "Rajeev Sharma", location: "Mumbai, MH", rating: 5, quote: "\"The BP estimation was within 5% of my home monitor. Oxxy's tech is truly revolutionary for early detection.\"", image: "/testimonials/test1.jpeg" },
+      { name: "Priya Menon", location: "Bangalore, KA", rating: 5, quote: "\"It detected my high stress levels before I even realized I was burnt out. The plan they suggested is a lifesaver.\"", image: "/testimonials/test2.jpeg" },
+      { name: "Ankit Tiwari", location: "New Delhi, DL", rating: 5, quote: "\"I never thought a face scan could estimate BMI and Cardiac Load. It's the depth of data that made me stay with Oxxy.\"", image: "/testimonials/test3.jpeg" }
     ],
     partners: [
       "https://lh3.googleusercontent.com/aida-public/AB6AXuCxXEIWc4YddQCEL5kgUc06X_lMVwk78aTOqQvXwo0aWHdqiDtm1nTi4lx6CfQCcTUCaUDW84iPNe4lLpnY3NQPpFco4yRj1VIs8dB_xl-HfwAXG5G3ZQpcE8LLF5SVsvsT4MvpCqN_Tcp_N8wnBO3OzUlGijzztlCX_-oMbs6QUvs5VT6lMSQrfWSr5GRiMNt3fYpTZTvYY3ixkpR2wmEnGiaw1zBEksVzZBzQazkrJ7NP6L4F5rTkkQptGIm0BE_N8g5FoxnzWs4",

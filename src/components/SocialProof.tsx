@@ -38,8 +38,12 @@ export const SocialProof: React.FC = () => {
                             </p>
 
                             <div className="flex items-center gap-4 mt-auto">
-                                <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center font-black text-primary text-xl shadow-inner uppercase">
-                                    {testimonial.name.slice(0, 1)}
+                                <div className="w-14 h-14 rounded-2xl overflow-hidden shadow-lg border-2 border-white">
+                                    <img 
+                                        src={testimonial.image} 
+                                        alt={testimonial.name}
+                                        className="w-full h-full object-cover transition-all duration-500 group-hover:scale-110"
+                                    />
                                 </div>
                                 <div className="flex flex-col">
                                     <span className="font-headline font-black text-secondary uppercase tracking-wider">{testimonial.name}</span>
